@@ -26,13 +26,15 @@ android {
     }
 }
 
-publishing {
-    publications {
-        release(MavenPublication) {
-            from components.getByName('release')
-            groupId = 'com.github.yutong-work'
-            artifactId = 'Equalizer'
-            version = '1.0.0'
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.getByName('release')
+                groupId = 'com.github.yutong-work'
+                artifactId = 'Equalizer'
+                version = '1.0.0'
+            }
         }
     }
 }
