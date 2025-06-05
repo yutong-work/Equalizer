@@ -1,0 +1,100 @@
+<resources>
+    <declare-styleable name="EqualizerView">
+        <!-- 连接线颜色 -->
+        <attr name="evLineColor" format="color" />
+        <!-- 球的颜色 -->
+        <attr name="evBallColor" format="color" />
+        <!--        内球-->
+        <attr name="evInBallColor" format="color" />
+        <!-- 渐变顶部颜色 -->
+        <attr name="evGradientTopColor" format="color" />
+        <!-- 渐变底部颜色 -->
+        <attr name="evGradientBottomColor" format="color" />
+        <!-- 是否显示渐变背景 -->
+        <attr name="evShowGradient" format="boolean" />
+        <!-- 是否显示内球 -->
+        <attr name="evShowInBall" format="boolean" />
+        <!-- 圆圈文本大小 -->
+        <attr name="evCircleTextSize" format="dimension" />
+        <!-- 圆圈文本颜色 -->
+        <attr name="evCircleTextColor" format="color" />
+        <!-- 圆圈半径大小 -->
+        <attr name="svCircleRadius" format="dimension" />
+        <!-- 连接线宽度 -->
+        <attr name="evLineWidth" format="dimension" />
+        <!-- 球的半径 -->
+        <attr name="evBallRadius" format="dimension" />
+        <!-- 是否使用贝塞尔曲线 -->
+        <attr name="evUseBezier" format="boolean" />
+        <!-- 是否显示球之间的连接线 -->
+        <attr name="evShowConnectionLine" format="boolean" />
+
+        <!-- X轴文本大小 -->
+        <attr name="evXTextSize" format="dimension" />
+        <!-- X轴选中颜色 -->
+        <attr name="evXSelectColor" format="color" />
+        <!-- X轴未选中颜色 -->
+        <attr name="evXUnSelectColor" format="color" />
+        <!-- 左右边距 -->
+        <attr name="evLRMargin" format="dimension" />
+        <!-- Y轴最大值 -->
+        <attr name="evYMax" format="integer" />
+        <!-- Y轴最小值 -->
+        <attr name="evYMin" format="integer" />
+
+        <!-- 是否显示背景线 -->
+        <attr name="evShowBackgroundLine" format="boolean" />
+
+        <!-- 顶部线颜色 -->
+        <attr name="evTopLineColor" format="color" />
+        <!-- 底部线颜色 -->
+        <attr name="evBottomLineColor" format="color" />
+        <!-- 顶部线宽度 -->
+        <attr name="evTopLineWidth" format="dimension" />
+        <!-- 底部线宽度 -->
+        <attr name="evBottomLineWidth" format="dimension" />
+        <!-- 顶部线是否显示圆角 -->
+        <attr name="evTopLineRound" format="boolean" />
+        <!-- 底部线是否显示圆角 -->
+        <attr name="evBottomLineRound" format="boolean" />
+        <!-- 是否使用浮点数滑动 -->
+        <attr name="evUseFloatValue" format="boolean" />
+        <!-- 新增属性 -->
+        <attr name="evPointShape" format="enum">
+            <enum name="circle" value="0" />
+            <enum name="square" value="1" />
+        </attr>
+        <attr name="evPointWidth" format="dimension" />
+        <attr name="evPointHeight" format="dimension" />
+        <attr name="evPointRound" format="boolean" />
+        <attr name="evPointRoundRadius" format="dimension" />
+        <attr name="evUseScale" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ThreeWaySliderView">
+        <!-- 最小值 -->
+        <attr name="minValue" format="float" />
+        <!-- 最大值 -->
+        <attr name="maxValue" format="float" />
+        <!-- 滑块的默认值 -->
+        <attr name="sliderDefaultValue" format="float" />
+        <!-- 滑块的控制点图片 -->
+        <attr name="sliderThumbDrawable" format="reference" />
+        <!-- 滑块的标签文本 -->
+        <attr name="sliderLabelText" format="string" />
+        <!-- 滑轨的颜色 -->
+        <attr name="trackColor" format="color" />
+        <!-- 滑轨的宽度 -->
+        <attr name="trackWidth" format="dimension" />
+        <!-- 进度文本的颜色 -->
+        <attr name="valueTextColor" format="color" />
+        <!-- 进度文本的字体大小 -->
+        <attr name="valueTextSize" format="dimension" />
+        <!-- 零刻度线的颜色 -->
+        <attr name="zeroLineColor" format="color" />
+        <!-- 零刻度线的宽度 -->
+        <attr name="zeroLineWidth" format="dimension" />
+        <!-- 进度条的颜色 -->
+        <attr name="progressColor" format="color" />
+    </declare-styleable>
+
+</resources> 
