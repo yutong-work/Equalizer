@@ -1,5 +1,5 @@
 plugins {
-    alias(libs.plugins.androidLibrary)
+    id 'com.android.library'
     id 'maven-publish'
 }
 
@@ -40,7 +40,6 @@ afterEvaluate {
 }
 
 dependencies {
-
     implementation libs.androidx.appcompat
     implementation libs.material
     testImplementation libs.junit
