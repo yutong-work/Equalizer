@@ -34,25 +34,38 @@ afterEvaluate {
                 artifactId = 'Equalizer'
                 version = '1.0.0'
 
-                // 直接引用生成的 aar 文件
+                // 使用 release aar 文件发布
                 artifact("$buildDir/outputs/aar/${project.name}-release.aar")
 
-                // 添加 POM 信息（可选但推荐）
+                // 可选：添加 POM 元数据
                 pom {
                     name = 'Equalizer'
                     description = 'An Android equalizer view library'
-                    url = 'https://github.com/yutong-work/EqualizerView'
+                    url = 'https://github.com/yutong-work/Equalizer'
                     licenses {
                         license {
                             name = 'Apache License 2.0'
                             url = 'https://www.apache.org/licenses/LICENSE-2.0.txt'
                         }
                     }
+                    developers {
+                        developer {
+                            id = 'yutong'
+                            name = 'Yu Tong'
+                            email = 'yutongwork920@gmail.com'
+                        }
+                    }
+                    scm {
+                        connection = 'scm:git:https://github.com/yutong-work/Equalizer.git'
+                        developerConnection = 'scm:git:ssh://github.com:yutong-work/Equalizer.git'
+                        url = 'https://github.com/yutong-work/Equalizer'
+                    }
                 }
             }
         }
     }
 }
+
 
 
 dependencies {
