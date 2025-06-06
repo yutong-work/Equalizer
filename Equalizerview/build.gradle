@@ -5,11 +5,12 @@ plugins {
 }
 
 android {
-    namespace 'com.yscoco.equalizer'
+    namespace 'com.yscoco.equalizerview'
     compileSdk 34
 
     defaultConfig {
         minSdk 24
+        targetSdk 34
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -30,51 +31,24 @@ android {
     }
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.getByName('release')
-                groupId = 'com.github.yutong-work'
-                artifactId = 'Equalizer'
-                version = '1.0.0'
-
-                // 使用 release aar 文件发布
-                artifact("$buildDir/outputs/aar/${project.name}-release.aar")
-
-                // 可选：添加 POM 元数据
-                pom {
-                    name = 'Equalizer'
-                    description = 'An Android equalizer view library'
-                    url = 'https://github.com/yutong-work/Equalizer'
-                    licenses {
-                        license {
-                            name = 'Apache License 2.0'
-                            url = 'https://www.apache.org/licenses/LICENSE-2.0.txt'
-                        }
-                    }
-                    developers {
-                        developer {
-                            id = 'yutong'
-                            name = 'Yu Tong'
-                            email = 'yutongwork920@gmail.com'
-                        }
-                    }
-                    scm {
-                        connection = 'scm:git:https://github.com/yutong-work/Equalizer.git'
-                        developerConnection = 'scm:git:ssh://github.com:yutong-work/Equalizer.git'
-                        url = 'https://github.com/yutong-work/Equalizer'
-                    }
-                }
-            }
-        }
-    }
-}
-
 dependencies {
+    implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.11.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.yutong-work'
+                artifactId = 'Equalizer'
+                version = '1.0.0'
+            }
+        }
+    }
 }
