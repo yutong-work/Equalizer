@@ -1,5 +1,6 @@
 # EqualizerView 使用文档
-![微信截图_20250605203852](https://github.com/user-attachments/assets/6fcce78f-997e-4147-82fc-ca602b334a39)
+
+![微信截图_20250606112434](https://github.com/user-attachments/assets/1ae30b0b-221b-46e1-8af7-3ce9ca77bb69)
 
 ## 简介
 EqualizerView 是一个自定义的音频均衡器视图组件，用于显示和调节音频均衡器的各个频段。它提供了丰富的自定义选项，可以满足不同的UI需求。
