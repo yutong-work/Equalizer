@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace 'com.yscoco.equalizerview'
+    namespace 'com.yscoco.equalizer'
     compileSdk 34
 
     defaultConfig {
-        minSdk 24
+        minSdk 21
         targetSdk 34
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -32,7 +32,6 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.11.0'
     testImplementation 'junit:junit:4.13.2'
@@ -48,27 +47,27 @@ afterEvaluate {
                 groupId = 'com.github.yutong-work'
                 artifactId = 'Equalizer'
                 version = '1.0.0'
-
+                
                 pom {
-                    name = 'Equalizer'
-                    description = 'An Android equalizer view library'
+                    name = 'EqualizerView'
+                    description = 'A custom Android view for equalizer visualization'
                     url = 'https://github.com/yutong-work/Equalizer'
                     licenses {
                         license {
-                            name = 'Apache License 2.0'
-                            url = 'https://www.apache.org/licenses/LICENSE-2.0.txt'
+                            name = 'The Apache License, Version 2.0'
+                            url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
                         }
                     }
                     developers {
                         developer {
-                            id = 'yutong'
-                            name = 'Yu Tong'
-                            email = 'yutongwork920@gmail.com'
+                            id = 'yutong-work'
+                            name = 'Yutong Work'
+                            email = 'yutong.work@gmail.com'
                         }
                     }
                     scm {
-                        connection = 'scm:git:https://github.com/yutong-work/Equalizer.git'
-                        developerConnection = 'scm:git:ssh://github.com:yutong-work/Equalizer.git'
+                        connection = 'scm:git:git://github.com/yutong-work/Equalizer.git'
+                        developerConnection = 'scm:git:ssh://github.com/yutong-work/Equalizer.git'
                         url = 'https://github.com/yutong-work/Equalizer'
                     }
                 }
