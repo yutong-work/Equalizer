@@ -48,6 +48,30 @@ afterEvaluate {
                 groupId = 'com.github.yutong-work'
                 artifactId = 'Equalizer'
                 version = '1.0.0'
+
+                pom {
+                    name = 'Equalizer'
+                    description = 'An Android equalizer view library'
+                    url = 'https://github.com/yutong-work/Equalizer'
+                    licenses {
+                        license {
+                            name = 'Apache License 2.0'
+                            url = 'https://www.apache.org/licenses/LICENSE-2.0.txt'
+                        }
+                    }
+                    developers {
+                        developer {
+                            id = 'yutong'
+                            name = 'Yu Tong'
+                            email = 'yutongwork920@gmail.com'
+                        }
+                    }
+                    scm {
+                        connection = 'scm:git:https://github.com/yutong-work/Equalizer.git'
+                        developerConnection = 'scm:git:ssh://github.com:yutong-work/Equalizer.git'
+                        url = 'https://github.com/yutong-work/Equalizer'
+                    }
+                }
             }
         }
     }
