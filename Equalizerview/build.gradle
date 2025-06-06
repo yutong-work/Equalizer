@@ -30,14 +30,30 @@ afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
-                from components.getByName('release')
                 groupId = 'com.github.yutong-work'
                 artifactId = 'Equalizer'
                 version = '1.0.0'
+
+                // 直接引用生成的 aar 文件
+                artifact("$buildDir/outputs/aar/${project.name}-release.aar")
+
+                // 添加 POM 信息（可选但推荐）
+                pom {
+                    name = 'Equalizer'
+                    description = 'An Android equalizer view library'
+                    url = 'https://github.com/yutong-work/EqualizerView'
+                    licenses {
+                        license {
+                            name = 'Apache License 2.0'
+                            url = 'https://www.apache.org/licenses/LICENSE-2.0.txt'
+                        }
+                    }
+                }
             }
         }
     }
 }
+
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
