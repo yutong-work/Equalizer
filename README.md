@@ -226,7 +226,11 @@ equalizerView.setEqualizerChange(new EqualizerView.OnEqualizerValueChange() {
 2. 如果控制点无法拖动，检查 `isMove` 属性是否设置为 true
 3. 如果颜色显示异常，检查颜色值格式是否正确
 4. 如果数据更新不及时，确保在数据变化后调用 `invalidate()` 方法
-![微信图片_20250605194825](https://github.com/user-attachments/assets/87b49de4-a663-42cd-8240-1a2e7bae57ec)
-![微信图片_20250605194819](https://github.com/user-attachments/assets/5da08c7d-7559-40da-9a85-2a080f722ab5)
-![微信图片_20250605194802](https://github.com/user-attachments/assets/fc9d543e-bb9d-46d9-bac8-15c2e2242ca7)
-![微信图片_20250605194811](https://github.com/user-attachments/assets/a7a686d9-da6f-42e0-9f15-6ca8d283b034)
+![微信截图_20250606112918](https://github.com/user-attachments/assets/72eb222f-96b1-4494-a963-b23bdbb19844)
+![微信截图_20250606113139](https://github.com/user-attachments/assets/8c63b6a1-d0ee-4b17-8384-da21d0f6eefc)
+![微信截图_20250606113103](https://github.com/user-attachments/assets/6f78cad7-2377-41d0-8f12-a7bf96ce79d9)
+![微信截图_20250606113304](https://github.com/user-attachments/assets/316cb94a-4867-4f6a-83cb-f6e1b6c09bcd)
+![微信截图_20250606113031](https://github.com/user-attachments/assets/4cf33aab-2dbe-4d44-906b-1baf436ea110)
+![微信截图_20250606113000](https://github.com/user-attachments/assets/016670e0-c9e2-48d6-aed8-fa9fb5065edb)
+![微信截图_20250606113213](https://github.com/user-attachments/assets/7a35a796-cd5c-46f3-acf6-d5937fffc7cb)
+
