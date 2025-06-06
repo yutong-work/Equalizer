@@ -4,6 +4,7 @@
 
 ## 简介
 EqualizerView 是一个自定义的音频均衡器视图组件，用于显示和调节音频均衡器的各个频段。它提供了丰富的自定义选项，可以满足不同的UI需求。
+
 implementation 'com.github.yutong-work:Equalizer:beta-ys-v1.0'
 ## 基本用法
 
@@ -226,6 +227,8 @@ equalizerView.setEqualizerChange(new EqualizerView.OnEqualizerValueChange() {
 2. 如果控制点无法拖动，检查 `isMove` 属性是否设置为 true
 3. 如果颜色显示异常，检查颜色值格式是否正确
 4. 如果数据更新不及时，确保在数据变化后调用 `invalidate()` 方法
+
+
 ![微信截图_20250606112918](https://github.com/user-attachments/assets/72eb222f-96b1-4494-a963-b23bdbb19844)
 ![微信截图_20250606113139](https://github.com/user-attachments/assets/8c63b6a1-d0ee-4b17-8384-da21d0f6eefc)
 ![微信截图_20250606113103](https://github.com/user-attachments/assets/6f78cad7-2377-41d0-8f12-a7bf96ce79d9)
